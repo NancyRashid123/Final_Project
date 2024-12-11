@@ -1,0 +1,35 @@
+.projects-section {
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+ 
+  
+  .projects-description {
+    font-size: 1.6rem;
+    text-align: center;
+    background-image: url(./src/assets/images/Layer-559.jpg);
+    background-position: 46% 30%;
+    background-size: cover;
+    font-family: "Nosifer", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    span{
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+  
+  }
+  
+  
+@media (min-width: 1024px) {
+  .projects-description {
+    span{
+      font-size: 3.5rem;
+    }
+  
+  }
+}
+
+  

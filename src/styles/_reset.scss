@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nosifer&family=Rubik+Marker+Hatch&family=Rubik+Wet+Paint&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+
+body{
+
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+    background-image: url('./src/assets/images/Screenshot 2024-11-08 223004.png');
+}
+
+h2,h3{
+    font-family: "Nosifer", sans-serif
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+ul{
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    margin: .5em;
+    width: 0;
+}

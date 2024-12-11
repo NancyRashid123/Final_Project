@@ -1,0 +1,470 @@
+.problems-header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 50px 0;
+  overflow: hidden;
+  color: #fff;
+  height: 85vh;
+  .problems-header-bg {
+    background-image: url(./src/assets/images/soil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: initial;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .problems-header-title {
+    position: relative;
+    top: 50%;
+    h1 {
+      font-family: "Nosifer", sans-serif;
+      font-weight: 400;
+      font-size: 4.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .problems-header-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+    padding-top: 52px;
+    background-color: #fff;
+    background-clip: content-box;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 105px;
+      left: 0;
+      top: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(./src/assets/images/page-title-layer.png);
+    }
+  }
+}
+
+.analysis-cards {
+  background-color: white;
+  // padding: 40px;
+}
+
+#weather-container {
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+#weather-container h3 {
+  text-align: center;
+  background-image: url(./src/assets/images/Layer-559.jpg);
+  background-position: 90% 50%;
+  background-size: cover;
+  // font-family: "Nosifer", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // font-family: "Nosifer", sans-serif;
+  color: white;
+  // background: linear-gradient(90deg, #ffb74d, #4caf50);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  #weather-icon-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.StateWhether {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .stat-box-container {
+    // display: flex;
+    // gap: 2rem;
+    margin-bottom: 2rem;
+
+    .stat-box {
+      background: linear-gradient(90deg, #ffb74d, #4caf50);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+      h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .circle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .circle {
+      width: 45%;
+      padding: 20px;
+      color: #333333b8;
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      padding: 12px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      border: none;
+      background-color: #f2f2f2;
+      color: #333;
+      width: 100%;
+      max-width: 450px;
+      // box-sizing: border-box;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+
+      &:focus {
+        outline: none;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 150, 255, 0.5);
+      }
+    }
+
+    button {
+      padding: 12px 20px;
+      color: white;
+      background: linear-gradient(90deg, #ffb74d, #4caf50);
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+      // box-sizing: border-box;
+    }
+  }
+}
+
+// Variables for theme colors
+// $primary-color: #4caf50; // Green
+// $secondary-color: #f1f1f1; // Light Gray
+// $accent-color: #ff9800; // Orange
+// $text-color: #333; // Dark Gray
+// $border-radius: 8px;
+
+// Soil Analysis Section
+.soil-analysis-section {
+  background-color: white;
+
+  h3 {
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+    background-image: url(./src/assets/images/Layer-559.jpg);
+    background-position: 90% 50%;
+    background-size: cover;
+    font-family: "Nosifer", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+
+  .SoilAnalysisContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+
+    form {
+      flex: 1;
+      min-width: 300px;
+      max-width: 100%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: $border-radius;
+      background: url("./src/assets/images/soil.jpg") no-repeat center center /
+        cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: #fff;
+    }
+
+    .results {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      h4 {
+        background-image: url(./src/assets/images/Layer-559.jpg);
+        background-position: 90% 50%;
+        background-size: cover;
+        font-family: "Nosifer", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.9rem;
+      }
+
+      .results-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        ul {
+          flex: 1;
+          padding-left: 1.5rem;
+          li {
+            color: $text-color;
+            line-height: 1.5;
+          }
+        }
+
+        img {
+          max-width: calc(50% - 1rem);
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: bold;
+    color: white;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: $border-radius;
+    outline: none;
+    transition: border 0.3s ease;
+    background-color: rgba(138, 232, 216, 0.242);
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 5px $primary-color;
+    }
+  }
+}
+
+.btn {
+  background-color: rgba(93, 216, 196, 0.379);
+  color: white;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem 2rem;
+  color: white;
+  background-color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  animation: slideUp 0.5s ease-out;
+}
+
+// Keyframes for shimmer effect
+@keyframes shimmer {
+  0% {
+    box-shadow: 0 0 15px 5px rgba(230, 133, 53, 0.772);
+    border-color: rgba(230, 133, 53, 0.774);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(230, 133, 53, 0.78);
+    border-color: rgba(230, 133, 53, 0.78);
+  }
+  100% {
+    box-shadow: 0 0 15px 5px rgba(230, 133, 53, 0.779);
+    border-color: rgba(230, 133, 53, 0.47);
+  }
+}
+
+// Chat Box Styles (Message Area)
+.chat-box {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 100, 0, 0.562),
+      rgba(0, 50, 0, 0.37)
+    ),
+    url(https://img.freepik.com/premium-photo/gradient-green-background_931101-508.jpg)
+      no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1400px;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px 5px rgba(230, 133, 53, 0.47);
+  border: 2px solid rgba(230, 133, 53, 0.47);
+  animation: shimmer 2s infinite;
+  overflow-y: auto;
+  height: 60vh;
+  font-size: 1.1rem;
+  line-height: 1.5;
+
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+  p {
+    margin: 1rem 0;
+  }
+
+  strong {
+    color: #ffb74d;
+  }
+}
+
+// Input Field Styles
+.chat-input {
+  width: 70%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 2px solid rgba(230, 133, 53, 0.47);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: rgba(46, 41, 41, 0.621);
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(230, 133, 53, 0.47);
+  animation: shimmer 2s infinite;
+  transition: background-color 0.3s ease;
+
+  &::placeholder {
+    color: #999;
+    opacity: 0.8;
+  }
+}
+
+// Submit Button Styles
+.chat-button {
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #ffb74d, #4caf50);
+  width: 40%;
+  &:hover {
+    background-color: #e6853578;
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+// Animations for smooth transitions
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .SoilAnalysisContainer {
+    display: flex;
+
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .stat-box-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    .stat-box {
+      width: calc((100% - 4rem) / 3);
+    }
+  }
+}

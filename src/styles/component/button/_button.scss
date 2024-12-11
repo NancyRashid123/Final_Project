@@ -1,0 +1,15 @@
+.view_gallery {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #9e7111e8;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view_gallery:hover {
+    background-color: #9e7111e6;
+  }
+  
