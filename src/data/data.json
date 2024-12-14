@@ -89,7 +89,7 @@
     },
     {
       "id": 4,
-      "image": "https://th.bing.com/th/id/OIP.uya0Bws3KDCT7LhlR1Qz9AAAAA?rs=1&pid=ImgDetMain",
+      "image": "./src/assets/images/cucamber.jpg",
       "title": "vegetables",
       "name": "Product 4",
       "description": "This is product 4 description",
@@ -113,7 +113,7 @@
     },
     {
       "id": 7,
-      "image": "https://i.pinimg.com/474x/59/81/f9/5981f929db1780c6762f325a0a76531b.jpg",
+      "image": "./src/assets/images/frawla.jpg",
       "title": "fruits",
       "name": "Strawberry",
       "description": "This is product 7 description",
@@ -121,7 +121,7 @@
     },
     {
       "id": 8,
-      "image": "https://th.bing.com/th/id/OIP.LpDSyEtDYLvl4ucv4yELOwAAAA?w=450&h=450&rs=1&pid=ImgDetMain",
+      "image": "./src/assets/images/orange.jpeg",
       "title": "fruits",
       "name": "Orange",
       "description": "This is product 8 description",
@@ -161,7 +161,7 @@
     },
     {
       "id": 13,
-      "image": "https://i.pinimg.com/474x/b8/97/4f/b8974f7a56cffb1d2fae8a7dfce79df2.jpg",
+      "image": "./src/assets/images/banana.jpg",
       "title": "fruits",
       "name": "Banana",
       "description": "This is product 13 description",
@@ -169,7 +169,7 @@
     },
     {
       "id": 14,
-      "image": "https://i.pinimg.com/736x/8f/a5/81/8fa58163caeb653c48c6395c349471a9.jpg",
+      "image": "./src/assets/images/melon.jpg",
       "title": "fruits",
       "name": "Watermelon",
       "description": "This is product 14 description",
@@ -177,7 +177,7 @@
     },
     {
       "id": 15,
-      "image": "./src/assets/images/fresh-golden-mangoes_1339-44944.jpg",
+      "image": "./src/assets/images/mango.jpeg",
       "title": "fruits",
       "name": "Mango",
       "description": "This is product 15 description",
@@ -209,15 +209,15 @@
     },
     {
       "id": 19,
-      "image": "https://i.pinimg.com/474x/24/a6/88/24a688121688692bfb35ca790517d83d.jpg",
+      "image": "./src/assets/images/beans.jpg",
       "title": "vegetables",
-      "name": "Green peas",
+      "name": "Green beans",
       "description": "This is product 19 description",
       "price": "$110"
     },
     {
       "id": 20,
-      "image": "https://i.pinimg.com/474x/b5/d0/91/b5d091afa2541d138b251b60ef95dcab.jpg",
+      "image": "./src/assets/images/lemen.jpg",
       "title": "vegetables",
       "name": "Lemon",
       "description": "This is product 20 description",

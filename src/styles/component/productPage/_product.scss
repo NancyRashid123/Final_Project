@@ -6,11 +6,13 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
 $transition-speed: 0.3s;
 
+
+.product-main{
+  background-color:#fafafa;
+}
+
 .product_section{
   width: 100%;
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 2rem;
 }
 
 .product-card {
@@ -34,9 +36,11 @@ $transition-speed: 0.3s;
   }
 
   & .product-card-image {
-    // width: 15rem;
+    width: 15rem;
     height: 10rem;
     overflow: hidden;
+    margin: auto;
+
 
     img {
       width: 100%;
@@ -55,21 +59,22 @@ $transition-speed: 0.3s;
     text-align: center;
 
     h5 {
-      font-size: 1rem;
-      color: $subtext-color;
+      color: #726b6b;
       margin: 0 0 8px;
+      font-size: 1.8rem;
     }
 
     h4 {
-      font-size: 1.25rem;
       color: $text-color;
       margin: 0 0 12px;
+      font-size: 2rem;
     }
 
     span {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: $secondary-color;
+      color: #726b6b;
     }
   }
 
@@ -186,14 +191,15 @@ $transition-speed: 0.3s;
 
 @media (min-width: 768px) {
   .product_section{
-    // width: 100%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
   }
 
   .product-card{
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 2rem)/2);
   }
 
   .single-product{
@@ -210,5 +216,48 @@ $transition-speed: 0.3s;
       }
 
   }
+  .product-card-image{
+      width: 30rem;
+      height: 0;
+      margin: auto;
+  }
 }
 
+@media (min-width: 900px) {
+ 
+  .product-card{
+    width: calc((100% - 4rem)/3);
+  }
+  h5 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+ 
+  .product-card{
+    width: calc((100% - 6rem)/4);
+  }
+  .product-card-image{
+    width: 100%;
+  }
+  .product-card .product-card-content h5 {
+    font-size: 1rem;
+  }
+
+  .product-card .product-card-content h4 {
+    font-size: 1rem;
+  }
+
+  .product-card .product-card-content span {
+    font-size: 1rem;
+  }
+}

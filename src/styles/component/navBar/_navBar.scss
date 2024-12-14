@@ -129,6 +129,12 @@
   }
 }
 
+.navBar-right{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 @media (min-width: 1024px) {
   .navBar {
     .menu {

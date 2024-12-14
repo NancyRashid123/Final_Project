@@ -1,27 +1,48 @@
 
+import React, { useContext } from "react";
+import { CounterContext } from "../../hooks/UseContext";
+import { Link } from "react-router-dom";
+import Button from "../button/Button";
 
+const ProductCard = ({ id, image, title, name, price }) => {
+  const { counter, setCounter } = useContext(CounterContext);
 
-import React from 'react';
-import Button from '../button/Button';
-import { Link } from 'react-router-dom';
-
-export default function ProductCard({ image, title, name, price, id }) {
+  const addToCart = () => {
+    const product = { id, image, title, name, price, quantity: 1 };
+    const storedCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+  
+    const existingProduct = storedCartItems.find((item) => item.id === id);
+    if (existingProduct) {
+      existingProduct.quantity += 1;
+    } else {
+      storedCartItems.push(product);
+    }
+  
+    localStorage.setItem("cart", JSON.stringify(storedCartItems));
+    setCounter(counter + 1);
+    updateCounter(); 
+  };
+  
   return (
-    <Link to={`/products/${id}`} className='product-card'>
-      <div className='product-card-image'>
+    <> 
+  
+    <div className="product-card">
+      <Link to={`/products/${id}`} className="product-card-image">
         <img src={image} alt="" />
-      </div>
-      <div className='product-card-content'>
-        <h5>{title}</h5>
+      </Link>
+      <div className="product-card-content">
         <h4>{name}</h4>
+        <h5>{title}</h5>
         <span>{price}</span>
       </div>
       <div className="project_btn_valign">
-        <Button text={"add to cart"} />
+        <Button onClick={addToCart} text="Add To Cart" />
       </div>
-    </Link>
+    </div>
+    </>
+      
+
   );
-}
+};
 
-
-
+export default ProductCard;

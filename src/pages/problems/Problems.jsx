@@ -10,7 +10,7 @@ export default function Problems() {
        <header className="problems-header">
     <div className="problems-header-bg"> </div>
     <div className="problems-header-title px">
-      <h1>PROB&SOLU</h1>
+      <h3>SOIL ANALYSIS</h3>
     </div>
     <div className="problems-header-overlay"></div>
   </header>

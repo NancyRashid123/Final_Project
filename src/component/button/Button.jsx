@@ -1,8 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function Button({ text, customClick, slug }) {
+export default function Button({ text, customClick, slug, onClick }) {
   const navigate = useNavigate();
+
   return (
     <button
       className="view_gallery"
@@ -13,8 +14,12 @@ export default function Button({ text, customClick, slug }) {
             top: 0,
             behavior: 'smooth',
           });
-        } else if (customClick) {
+        }
+         else if (customClick) {
           customClick();
+        } 
+        else if (onClick) {
+          onClick();
         }
       }}
     >
@@ -22,3 +27,4 @@ export default function Button({ text, customClick, slug }) {
     </button>
   );
 }
+

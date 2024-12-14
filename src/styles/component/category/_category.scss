@@ -1,0 +1,51 @@
+
+.categoryComponent {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.filterCategory--container {
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterCategory-image {
+  width: 10.5rem;
+  height: 10.5rem;
+  border: 4px solid #f1f1f1;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: border-color 0.3s ease; 
+}
+
+.filterCategory-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.filterCategory-text {
+  font-family: "Nosifer", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:#333333b9; 
+  transition: color 0.3s ease; 
+}
+
+.filterCategory--container.active .filterCategory-image {
+  border-color: #eece38; 
+}
+
+.filterCategory--container.active .filterCategory-text {
+  color: #eece38;
+}
+
+
+  
